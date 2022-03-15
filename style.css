@@ -1,0 +1,147 @@
+/* Universal  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* For the Body- css */
+body {
+  background-image: linear-gradient(120deg, #1c8adb, #fda085);
+  color: white;
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+}
+
+/* For Header */
+header {
+  font-size: 1.5rem;
+}
+/* Header and form */
+header,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+
+/* Form input and form button */
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+/* Form botton cursor and transition effect */
+form button {
+  color: #03dac6;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Form botton hover effect */
+form button:hover {
+  background: #3700b3;
+  color: white;
+}
+
+/* Styling todo-container ul */
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* styling div which is at the todo container */
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+/* Styling todo div list from through javascrip */
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+/* Styling todo div list li from through javascrip */
+.todo li {
+  flex: 1;
+}
+/* Buttons created during forming div and li */
+.complete-btn,
+.delete-btn {
+  background: #ff6f47;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background: rgb(73, 204, 73);
+}
+
+/* todo-item */
+.todo-item {
+  padding: 0rem 0.25rem;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+/* Animation setting */
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+/* Taking all the effect of select to create our own style */
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #3700b3;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after {
+  background: white;
+  color: #ff6f47;
+}
